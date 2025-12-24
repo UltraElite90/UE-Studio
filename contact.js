@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         username: "UE Studio",
-        avatar_url: "https://i.imgur.com/TJ6BthE.jpeg",
+        avatar_url: "https://ue-studio.netlify.app/image/logo.png",
         embeds: [{
           title: "🧾 New Order Received",
           color: 16766720,
@@ -187,4 +187,5 @@ document.addEventListener('DOMContentLoaded', function() {
         answer.style.transition = 'max-height 0.3s ease, opacity 0.3s ease, margin-top 0.3s ease';
         answer.style.opacity = '0.7';
     });
+
 });
