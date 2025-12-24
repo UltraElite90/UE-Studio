@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - UE Studio</title>
+    <link rel="icon" href="favicon-v2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">UE <span class="logo-highlight">Studio</span></span>
+            </a>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link active">Services</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Services Page Content -->
+    <main class="services-page">
+        <section class="hero-section">
+            <div class="container">
+                <h1 class="page-title neon-text">Our Services</h1>
+                <p class="page-subtitle">Comprehensive Minecraft development solutions tailored to your server's needs.</p>
+            </div>
+        </section>
+
+        <!-- Services List -->
+        <section class="services-list">
+            <div class="container">
+                <div class="service-item animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <div class="service-content">
+                        <h2>Custom Plugin Development</h2>
+                        <p>From simple quality-of-life improvements to complex game systems, we create custom plugins that enhance your server's gameplay experience. Our plugins are optimized for performance and compatibility with popular server platforms like Spigot, Paper, and Bukkit.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Complete custom functionality</li>
+                            <li><i class="fas fa-check-circle"></i> API integration with popular plugins</li>
+                            <li><i class="fas fa-check-circle"></i> Database implementation (MySQL, SQLite)</li>
+                            <li><i class="fas fa-check-circle"></i> Multi-version compatibility</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-item animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-toolbox"></i>
+                    </div>
+                    <div class="service-content">
+                        <h2>Mod Development & Porting</h2>
+                        <p>Bring new dimensions to Minecraft with custom mods for Forge or Fabric. We develop original mods or port existing ones between versions while maintaining functionality and adding new features tailored to your vision.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Forge & Fabric mod development</li>
+                            <li><i class="fas fa-check-circle"></i> Mod version porting (1.12 → 1.19+)</li>
+                            <li><i class="fas fa-check-circle"></i> Custom blocks, items, and entities</li>
+                            <li><i class="fas fa-check-circle"></i> Client-server synchronization</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-item animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="service-content">
+                        <h2>Server Setup & Optimization</h2>
+                        <p>We provide complete server setup services including configuration, plugin selection, and performance optimization. Ensure your server runs smoothly even with hundreds of players online simultaneously.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Complete server setup & configuration</li>
+                            <li><i class="fas fa-check-circle"></i> Performance optimization & tuning</li>
+                            <li><i class="fas fa-check-circle"></i> Security hardening & DDoS protection</li>
+                            <li><i class="fas fa-check-circle"></i> Backup systems & monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-item animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <div class="service-content">
+                        <h2>Bug Fixes & Maintenance</h2>
+                        <p>Experiencing issues with existing plugins or mods? Our team can diagnose and fix bugs, improve performance, and add new features to your existing codebase.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Bug diagnosis & fixing</li>
+                            <li><i class="fas fa-check-circle"></i> Code optimization & refactoring</li>
+                            <li><i class="fas fa-check-circle"></i> Feature additions & updates</li>
+                            <li><i class="fas fa-check-circle"></i> Long-term maintenance plans</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-section">
+            <div class="container">
+                <h2 class="section-title">Development Packages</h2>
+                <p class="section-subtitle">Choose the package that fits your project needs. All packages include 30 days of free support.</p>
+
+                <div class="pricing-grid">
+                    <div class="pricing-card animate-on-scroll">
+                        <div class="pricing-header">
+                            <h3>Basic Plugin</h3>
+                            <div class="price">$50<span class="price-note">+</span></div>
+                            <p class="price-description">Simple custom functionality</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Up to 3 custom commands</li>
+                            <li><i class="fas fa-check"></i> Basic configuration</li>
+                            <li><i class="fas fa-check"></i> 1-2 weeks delivery</li>
+                            <li><i class="fas fa-check"></i> 30 days support</li>
+                            <li><i class="fas fa-times"></i> No database integration</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                    </div>
+
+                    <div class="pricing-card featured animate-on-scroll">
+                        <div class="pricing-badge">Most Popular</div>
+                        <div class="pricing-header">
+                            <h3>Advanced Plugin</h3>
+                            <div class="price">$150<span class="price-note">+</span></div>
+                            <p class="price-description">Complex systems with database</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Up to 10 custom commands</li>
+                            <li><i class="fas fa-check"></i> MySQL/SQLite database</li>
+                            <li><i class="fas fa-check"></i> GUI interfaces</li>
+                            <li><i class="fas fa-check"></i> 2-4 weeks delivery</li>
+                            <li><i class="fas fa-check"></i> 60 days support</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-submit">Get Started</a>
+                    </div>
+
+                    <div class="pricing-card animate-on-scroll">
+                        <div class="pricing-header">
+                            <h3>Custom Mod</h3>
+                            <div class="price">$300<span class="price-note">+</span></div>
+                            <p class="price-description">Complete custom mod development</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Custom blocks/items</li>
+                            <li><i class="fas fa-check"></i> Forge/Fabric compatibility</li>
+                            <li><i class="fas fa-check"></i> Multi-version support</li>
+                            <li><i class="fas fa-check"></i> 4-8 weeks delivery</li>
+                            <li><i class="fas fa-check"></i> 90 days support</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+
+                <p class="pricing-note">All prices are starting estimates. Final pricing depends on project complexity and requirements.</p>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="container">
+                <h2 class="section-title">Our Development Process</h2>
+
+                <div class="process-steps">
+                    <div class="process-step animate-on-scroll">
+                        <div class="step-number">1</div>
+                        <h3>Consultation</h3>
+                        <p>We discuss your project requirements, timeline, and budget to create a detailed plan.</p>
+                    </div>
+
+                    <div class="process-step animate-on-scroll">
+                        <div class="step-number">2</div>
+                        <h3>Planning & Design</h3>
+                        <p>We create a technical specification and design document for your review and approval.</p>
+                    </div>
+                    
+                    <div class="process-step animate-on-scroll">
+                        <div class="step-number">3</div>
+                        <h3>Development</h3>
+                        <p>Our team begins coding your project with regular updates on progress.</p>
+                    </div>
+                    
+                    <div class="process-step animate-on-scroll">
+                        <div class="step-number">4</div>
+                        <h3>Testing & Delivery</h3>
+                        <p>We thoroughly test the project on a test server before delivering the final product.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">UE <span class="logo-highlight">Studio</span></span>
+                    </a>
+                    <p class="footer-tagline">Crafting exceptional Minecraft experiences through code.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="https://discord.gg/pBERcgebqx" target="blank"  class="social-icon discord-icon">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="https://t.me/UE_Studio90" class="social-icon telegram-icon">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@UE-Studio" class="social-icon youtube-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://github.com/UE-Studio90" class="social-icon github-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 UE Studio. All rights reserved. Minecraft is a trademark of Mojang AB. We are not affiliated with Mojang.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="services.js"></script>
+</body>
+</html>

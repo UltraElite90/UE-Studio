@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UE Studio - Minecraft Plugin & Mod Services</title>
+    <link rel="icon" href="favicon-v2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">UE <span class="logo-highlight">Studio</span></span>
+            </a>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Page Content -->
+    <main class="contact-page">
+        <section class="hero-section">
+            <div class="container">
+                <h1 class="page-title neon-text">Get In Touch</h1>
+                <p class="page-subtitle">Let's build something amazing for your Minecraft server</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+
+                    <div class="contact-info">
+                        <h2 class="section-title">Contact Information</h2>
+                        <p class="contact-description">Reach out to us via Discord or Telegram for quick responses. We're here to help bring your Minecraft project to life!</p>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon discord-icon">
+                                    <i class="fab fa-discord"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Discord</h3>
+                                    <p>Join our Discord server for instant communication with our team and community.</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-icon telegram-icon">
+                                    <i class="fab fa-telegram"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Telegram</h3>
+                                    <p>Prefer Telegram? Connect with us directly through our Telegram channel.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-buttons">
+                            <button id="discordBtn" class="btn btn-discord">
+                                <i class="fab fa-discord"></i> Join Discord
+                            </button>
+                            <button id="telegramBtn" class="btn btn-telegram">
+                                <i class="fab fa-telegram"></i> Join Telegram
+                            </button>
+                        </div>
+                        <div class="contact-note">
+                            <p><i class="fas fa-info-circle"></i> <strong>Note:</strong> Discord is our primary communication platform. If you don't have Discord, use Telegram as an alternative.</p>
+                        </div>
+                    </div>
+
+                    <div class="order-form-container">
+                        <h2 class="section-title">Place Your Order</h2>
+                        <p class="form-description">Tell us about your project and we'll get back to you with a quote.</p>
+
+                        <form id="orderForm" class="order-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact">Contact Handle</label>
+                                <input type="text" id="contact" name="contact" required placeholder="Discord, Telegram, or Email">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="requestType">Request Type</label>
+                                <select id="requestType" name="requestType" required>
+                                    <option value="" disabled selected>Select a service</option>
+                                    <option value="custom-plugin">Custom Plugin</option>
+                                    <option value="mod-development">Mod Development</option>
+                                    <option value="server-setup">Server Setup</option>
+                                    <option value="bug-fixes">Bug Fixes</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="description">Project Description</label>
+                                <textarea id="description" name="description" rows="6" required placeholder="Describe your project in detail..."></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget">Estimated Budget (Optional)</label>
+                                <input type="text" id="budget" name="budget" placeholder="$50 - $100">
+                            </div>
+
+                            <button type="submit" class="btn btn-submit">
+                                <i class="fas fa-paper-plane"></i> Send Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3 class="faq-question">How long does a typical project take?</h3>
+                        <p class="faq-answer">Simple plugins take 1-2 weeks, while complex mods can take 4-8 weeks. We provide timeline estimates after reviewing your requirements.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">What's your pricing structure?</h3>
+                        <p class="faq-answer">We offer project-based pricing. Simple plugins start at $50, while more complex projects are quoted individually based on requirements.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">Do you offer post-launch support?</h3>
+                        <p class="faq-answer">Yes! All projects come with 30 days of free support and bug fixes. Extended support plans are also available.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">What Minecraft versions do you support?</h3>
+                        <p class="faq-answer">We develop for all modern Minecraft versions (1.16+) including the latest releases. Legacy version support is also available.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">UE <span class="logo-highlight">Studio</span></span>
+                    </a>
+                    <p class="footer-tagline">Crafting exceptional Minecraft experiences through code.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="https://discord.gg/pBERcgebqx" target="blank"  class="social-icon discord-icon">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="https://t.me/UE_Studio90" class="social-icon telegram-icon">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@UE-Studio" class="social-icon youtube-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://github.com/UE-Studio90" class="social-icon github-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 UE Studio. All rights reserved. Minecraft is a trademark of Mojang AB. We are not affiliated with Mojang.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Discord/Telegram -->
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <div class="modal-header">
+                <h2 id="modalTitle">Join Our Discord</h2>
+            </div>
+            <div class="modal-body">
+                <p id="modalMessage">Click the button below to join our Discord server and connect with our team.</p>
+                <div class="modal-actions">
+                    <a href="#" id="modalActionLink" target="_blank" class="btn btn-modal">Join Now</a>
+                    <button id="modalSecondaryBtn" class="btn btn-secondary">Use Telegram Instead</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
